@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle angular-jonpapa-snippets'
+      'command': 'angular-jonpapa-snippets:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'angular-jonpapa-snippets'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'angular-jonpapa-snippets:toggle'
+        }
+      ]
+    ]
+  }
+]
