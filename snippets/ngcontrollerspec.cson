@@ -1,0 +1,32 @@
+'.source.js':
+  'ngController':
+    'prefix': 'ngcontrollerspec'
+    'body': """
+      'use strict';
+
+      describe('${6:base description}, ', function() {
+        var ${2:service}, ${1:controller}, ${3:mock}Json;
+
+        ${3:mock}Json = angular.copy(window.__fixtures__['/json/${3:mock}']);
+
+        function ${2:service}Mock() {
+          ${2:service} = jasmine.createSpyObj('${2:service}', ['${4:mockFunction}']);
+          ${2:service}.${4:mockFunction}.and.returnValue(${3:mock}Json);
+          return ${2:service};
+        }
+
+        beforeEach(module('${5:module}'));
+
+        beforeEach(inject(function($controller) {
+          ${1:controller} = $controller('${1:controller}', {
+            ${2:service}: ${2:service}Mock()
+          });
+        }));
+
+        describe('${7:second description}, ', function() {
+          it('${8:testcase}', function() {
+            expect(${2:service}.${4:mockFunction}).toHaveBeenCalled();
+          });
+        });
+      });
+    """

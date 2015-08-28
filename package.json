@@ -1,0 +1,31 @@
+{
+  "name": "angular-jonpapa-snippets",
+  "main": "./lib/angular-jonpapa-snippets",
+  "version": "0.0.1",
+  "description": "A set of AngularJS snippets based on the Jon Papa's style guide, with further utility like specs.",
+  "repository": "https://github.com/dennyscott/angular-jonpapa-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/dennyscottangular-jonpapa-snippets/issues"
+  },
+  "homepage": "https://github.com/dennyscott/angular-papa-snippets",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/angular-jonpapa-snippets.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

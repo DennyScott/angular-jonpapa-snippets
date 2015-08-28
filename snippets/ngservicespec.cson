@@ -1,0 +1,40 @@
+'.source.js':
+  'ngController':
+    'prefix': 'ngservicespec'
+    'body': """
+      'use strict';
+
+      describe('${7:baseDescription} ', function() {
+
+        var ${1:service}, $q, $rootScope, ${2:mockService}, ${4:mock}Json;
+
+        beforeEach(module('${5.module}'));
+
+        beforeEach(function() {
+          module(function($provide) {
+            ${4:mock}Json = angular.copy(window.__fixtures__['/json/auth']);
+
+            ${2:mockService} = jasmine.createSpyObj('${2:mockService}', [
+              '${3:mockFunction}'
+            ]);
+
+            ${2:mockService}.${3:mockFunction}.and.returnValue(${4:mock}Json);
+
+            $provide.value('${2:mockService}', ${2:mockService});
+          });
+        });
+
+        beforeEach(inject(function(_${1:service}_, _$q_, _$rootScope_) {
+          ${1:service} = _${1:service}_;
+          $q = _$q_;
+          $rootScope = _$rootScope_;
+        }));
+
+        describe('${8:secondDescription}', function() {
+          it('${9:testCase}', function() {
+            ${1:service}.${6:serviceFunction}();
+            expect(${2:mockService}.${3:mockFunction}).toHaveBeenCalled();
+          });
+        });
+      });
+    """

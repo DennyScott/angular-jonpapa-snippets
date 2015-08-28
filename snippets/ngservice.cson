@@ -1,0 +1,18 @@
+'.source.js':
+  'ngService':
+    'prefix': 'ngservice'
+    'body': """
+      'use strict';
+
+      angular
+          .module('${1:module}')
+          .factory'${2:Service}', ${2:Service});
+
+      function ${2:Service}(${3:dependencies}) {
+          this.${4:function} = ${4:function};
+
+          function ${4:function}() {
+
+          }
+      }
+    """

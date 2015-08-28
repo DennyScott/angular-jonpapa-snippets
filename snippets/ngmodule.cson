@@ -1,0 +1,11 @@
+'.source.js':
+  'ngModule':
+    'prefix': 'ngmodule'
+    'body': """
+      'use strict';
+
+      angular
+          .module('${1:module}', [
+              '${2:dependencies}'
+          ]);
+    """

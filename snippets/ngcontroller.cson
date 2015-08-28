@@ -1,0 +1,24 @@
+'.source.js':
+  'ngController':
+    'prefix': 'ngcontroller'
+    'body': """
+      'use strict';
+
+      angular
+          .module('${1:module}')
+          .controller('${2:Controller}', ${2:Controller});
+
+      function ${2:Controller}(${3:dependencies}) {
+          var vm = this;
+
+          angular.extend(vm, {
+
+          });
+
+          activate();
+
+          function activate() {
+
+          }
+      }
+    """
