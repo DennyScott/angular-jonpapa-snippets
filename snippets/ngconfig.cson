@@ -1,0 +1,14 @@
+'.source.js':
+  'ngConfig':
+    'prefix': 'ngconfig'
+    'body': """
+      'use strict';
+
+      angular
+        .module('${1:module}')
+        .config(${2:configName});
+
+      function ${2:configName}(${3:dependencies}) {
+        ${4:innerFunction}
+      }
+    """

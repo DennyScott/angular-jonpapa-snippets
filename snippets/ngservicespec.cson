@@ -1,5 +1,5 @@
 '.source.js':
-  'ngController':
+  'ngServiceSpec':
     'prefix': 'ngservicespec'
     'body': """
       'use strict';

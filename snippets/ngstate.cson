@@ -1,0 +1,27 @@
+'.source.js':
+  'ngState':
+    'prefix': 'ngstate'
+    'body': """
+      'use strict';
+
+      angular
+        .module('${1:module}')
+        .config(route);
+
+      function route($stateProvider) {
+        $stateProvider
+          .state('${2:state}', {
+            url: '/${3:url}',
+            abstract: true,
+            controller: '${4:controller}Controller as vm',
+            templateUrl: '${5:templatUrl}',
+            resolve: {
+              ${6:resolve}: ${6:resolve},
+            },
+          })
+      }
+
+      function ${6:resolve}() {
+        ${7:innerFunction}
+      }
+    """

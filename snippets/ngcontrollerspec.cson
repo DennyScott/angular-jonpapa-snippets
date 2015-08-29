@@ -1,11 +1,11 @@
 '.source.js':
-  'ngController':
+  'ngControllerSpec':
     'prefix': 'ngcontrollerspec'
     'body': """
       'use strict';
 
       describe('${6:base description}, ', function() {
-        var ${2:service}, ${1:controller}, ${3:mock}Json;
+        var ${2:service}, ${1:controller}Controller, ${3:mock}Json;
 
         ${3:mock}Json = angular.copy(window.__fixtures__['/json/${3:mock}']);
 
@@ -18,7 +18,7 @@
         beforeEach(module('${5:module}'));
 
         beforeEach(inject(function($controller) {
-          ${1:controller} = $controller('${1:controller}', {
+          ${1:controller}Controller = $controller('${1:controller}Controller', {
             ${2:service}: ${2:service}Mock()
           });
         }));

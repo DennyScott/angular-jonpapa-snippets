@@ -12,12 +12,16 @@
           var vm = this;
 
           angular.extend(vm, {
-
+            ${3:function}: ${3:function}
           });
 
           activate();
 
           function activate() {
+
+          }
+
+          function ${3:function}() {
 
           }
       }

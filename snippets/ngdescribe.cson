@@ -1,0 +1,14 @@
+'.source.js':
+  'ngDescribe':
+    'prefix': 'ngdescribe'
+    'body': """
+      describe('${1:description}, ', function() {
+        beforeEach(function() {
+          ${4:beforeEach}
+        });
+
+        it('${2:testcase}', function() {
+          expect(${3:value}).toBe(true);
+        });
+      });
+    """

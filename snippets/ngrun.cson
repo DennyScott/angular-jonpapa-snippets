@@ -1,0 +1,14 @@
+'.source.js':
+  'ngRun':
+    'prefix': 'ngrun'
+    'body': """
+      'use strict';
+
+      angular
+        .module('${1:module}')
+        .run(${2:runName});
+
+      function ${2:runName}(${3:dependencies}) {
+        ${4:innerFunction}
+      }
+    """
