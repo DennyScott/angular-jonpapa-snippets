@@ -18,7 +18,7 @@ function ${2:Controller}(${3:dependencies}) {
     var vm = this;
 
     angular.extend(vm, {
-      ${3:function}: ${3:function}
+      ${4:function}: ${4:function}
     });
 
     activate();
@@ -27,7 +27,7 @@ function ${2:Controller}(${3:dependencies}) {
 
     }
 
-    function ${3:function}() {
+    function ${4:function}() {
 
     }
 }
