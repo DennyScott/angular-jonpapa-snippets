@@ -9,15 +9,15 @@
         .config(route);
 
       function route($routeProvider) {
-          $routeProvider
-              .when('/${2:route}', {
-                  templateUrl: '${3:templateUrl}',
-                  controller: '${4.controller}Controller',
-                  controllerAs: 'vm',
-                  resolve: {
-                      ${5:resolve}: ${5:resolve}
-                  }
-              });
+        $routeProvider
+          .when('/${2:route}', {
+              templateUrl: '${3:templateUrl}',
+              controller: '${4.controller}Controller',
+              controllerAs: 'vm',
+              resolve: {
+                  ${5:resolve}: ${5:resolve}
+              }
+          });
       }
 
       function ${5:resolve}() {

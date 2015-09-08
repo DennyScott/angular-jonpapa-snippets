@@ -5,18 +5,18 @@
       'use strict';
 
       angular
-          .module('${1:module}')
-          .factory('${2:factory}', ${2:factory});
+        .module('${1:module}')
+        .factory('${2:factory}', ${2:factory});
 
       function ${2:factory}(${3:dependencies}) {
-          var service = {
-              ${4:function}: ${4:function}
-          };
+        var service = {
+          ${4:function}: ${4:function}
+        };
 
-          return service;
+        return service;
 
-          function ${4:function}() {
+        function ${4:function}() {
 
-          }
+        }
       }
     """

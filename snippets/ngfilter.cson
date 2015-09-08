@@ -5,14 +5,14 @@
       'use strict';
 
       angular
-          .module('${1:module}')
-          .filter('${2:filter}', ${2:filter});
+        .module('${1:module}')
+        .filter('${2:filter}', ${2:filter});
 
       function ${2:filter}() {
-          return ${2:filter}Filter
+        return ${2:filter}Filter
 
-          function ${2:filter}Filter(${3:params}) {
-              return ${3:params};
-          }
+        function ${2:filter}Filter(${3:params}) {
+          return ${3:params};
+        }
       }
     """
