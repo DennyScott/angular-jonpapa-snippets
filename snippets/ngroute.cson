@@ -12,7 +12,7 @@
         $routeProvider
           .when('/${2:route}', {
               templateUrl: '${3:templateUrl}',
-              controller: '${4.controller}Controller',
+              controller: '${4:controller}Controller',
               controllerAs: 'vm',
               resolve: {
                   ${5:resolve}: ${5:resolve}
